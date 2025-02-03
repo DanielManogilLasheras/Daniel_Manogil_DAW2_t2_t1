@@ -70,6 +70,9 @@ async function loadContent(dataToLoad){
                                     <div class="col-4">
                                         <h6 class="card-subtitle mb-2 text-body-secondary">${product.price} €</h6>
                                     </div>
+                                    <div class="col-7">
+                                        <button type="button" class="btn btn-outline-primary" onclick="addToCart(${product.id})">Add to cart</button>
+                                    </div>
                                 </div>
                             </div>
                         </div>
@@ -126,9 +129,6 @@ async function addToCart(productSelected){
                             <div class="row justify-content-between">
                                 <div class="col-4">
                                     <h6 class="card-subtitle mb-2 text-body-secondary">${product.price} €</h6>
-                                </div>
-                                <div class="col-7">
-                                    <button type="button" class="btn btn-outline-primary" onclick="addToCart(${product.id})">Add to cart</button>
                                 </div>
                             </div>
                         </div>
